@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Fields>
+        <Field FieldName="BkrNo"/>-->
+        <Field FieldName="BkrSubNo"/>
+        <Field FieldName="BuyCod"/>
+        <Field FieldName="TranExchangeId"/>
+        <Field FieldName="BtradeCod"/>
+        <Field FieldName="ValueDatCod"/>
+    </Fields>
+</root>

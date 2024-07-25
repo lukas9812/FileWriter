@@ -1,0 +1,11 @@
+C:\MyProjects\RollingFileWriter\bin\Debug\net8.0\RollingFileWriter.deps.json
+C:\MyProjects\RollingFileWriter\bin\Debug\net8.0\RollingFileWriter.dll
+C:\MyProjects\RollingFileWriter\bin\Debug\net8.0\RollingFileWriter.pdb
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.AssemblyInfoInputs.cache
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.AssemblyInfo.cs
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.csproj.CoreCompileInputs.cache
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.dll
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\refint\RollingFileWriter.dll
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.pdb
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\ref\RollingFileWriter.dll

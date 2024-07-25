@@ -18,11 +18,8 @@ public class CommonLogic : ICommonLogic
 
     public void Perform()
     {
-        _rollingFileWriterService.WriteData("kkte");
-        _mappingService.FilterData("kokote");
-        var cnf = _configuration.GetAppSettings();
-        var isMappingEnabled = cnf.IsMappingEnabled;
-        Console.Write(isMappingEnabled);
+        if (_configuration.GetAppSettings()!.IsMappingEnabled)
+            _mappingService.FilterData("");
     }
     
     

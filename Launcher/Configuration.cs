@@ -19,6 +19,11 @@ public class Configuration : IConfiguration
             .AddJsonFile("appsettings.json", false, true)
             .Build();
 
-        return config.GetSection("AppSettings").Get<AppSettings>();
+        var mainSection = config.GetSection("AppSettings");
+        
+        if (mainSection == null)
+            Console.WriteLine("Section do not exist!!");
+
+        return mainSection!.Get<AppSettings>()!;
     }
 }
