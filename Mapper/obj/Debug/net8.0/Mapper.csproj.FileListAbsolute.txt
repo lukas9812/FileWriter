@@ -5,8 +5,8 @@ C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.GeneratedMSBuildEditorConfig.editor
 C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.AssemblyInfoInputs.cache
 C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.AssemblyInfo.cs
 C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.csproj.CoreCompileInputs.cache
+C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.sourcelink.json
 C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.dll
 C:\MyProjects\Mapper\obj\Debug\net8.0\refint\Mapper.dll
 C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.pdb
 C:\MyProjects\Mapper\obj\Debug\net8.0\ref\Mapper.dll
-C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.sourcelink.json

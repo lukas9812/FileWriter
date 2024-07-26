@@ -19,6 +19,6 @@ public class Person
 
 public enum GenderType
 {
-    Man,
-    Woman
+    Male,
+    Female
 }

@@ -4,7 +4,7 @@
     <Person>
         <FirstName>John</FirstName>
         <LastName>Doe</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>123 Main St, Springfield</Address>
         <JobPosition>Software Engineer</JobPosition>
         <Age>30</Age>
@@ -12,7 +12,7 @@
     <Person>
         <FirstName>Jane</FirstName>
         <LastName>Smith</LastName>
-        <Gender>2</Gender>
+        <Gender>Female</Gender>
         <Address>456 Elm St, Springfield</Address>
         <JobPosition>Project Manager</JobPosition>
         <Age>40</Age>
@@ -20,7 +20,7 @@
     <Person>
         <FirstName>Alex</FirstName>
         <LastName>Johnson</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>789 Oak St, Springfield</Address>
         <JobPosition>Designer</JobPosition>
         <Age>28</Age>
@@ -28,7 +28,7 @@
     <Person>
         <FirstName>Emily</FirstName>
         <LastName>Clark</LastName>
-        <Gender>2</Gender>
+        <Gender>Female</Gender>
         <Address>321 Pine St, Springfield</Address>
         <JobPosition>Data Scientist</JobPosition>
         <Age>32</Age>
@@ -36,7 +36,7 @@
     <Person>
         <FirstName>Michael</FirstName>
         <LastName>Brown</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>654 Cedar St, Springfield</Address>
         <JobPosition>Marketing Manager</JobPosition>
         <Age>45</Age>
@@ -44,7 +44,7 @@
     <Person>
         <FirstName>Jessica</FirstName>
         <LastName>White</LastName>
-        <Gender>2</Gender>
+        <Gender>Female</Gender>
         <Address>987 Walnut St, Springfield</Address>
         <JobPosition>HR Specialist</JobPosition>
         <Age>29</Age>
@@ -52,7 +52,7 @@
     <Person>
         <FirstName>David</FirstName>
         <LastName>Green</LastName>
-        <Gender>2</Gender>
+        <Gender>Male</Gender>
         <Address>222 Maple St, Springfield</Address>
         <JobPosition>Accountant</JobPosition>
         <Age>35</Age>
@@ -60,7 +60,7 @@
     <Person>
         <FirstName>Sarah</FirstName>
         <LastName>Harris</LastName>
-        <Gender>1</Gender>
+        <Gender>Female</Gender>
         <Address>555 Birch St, Springfield</Address>
         <JobPosition>Business Analyst</JobPosition>
         <Age>42</Age>
@@ -68,7 +68,7 @@
     <Person>
         <FirstName>William</FirstName>
         <LastName>Hall</LastName>
-        <Gender>2</Gender>
+        <Gender>Male</Gender>
         <Address>777 Cherry St, Springfield</Address>
         <JobPosition>Operations Manager</JobPosition>
         <Age>50</Age>
@@ -76,7 +76,7 @@
     <Person>
         <FirstName>Ashley</FirstName>
         <LastName>Adams</LastName>
-        <Gender>1</Gender>
+        <Gender>Female</Gender>
         <Address>999 Poplar St, Springfield</Address>
         <JobPosition>Content Writer</JobPosition>
         <Age>27</Age>
@@ -84,7 +84,7 @@
     <Person>
         <FirstName>James</FirstName>
         <LastName>Lewis</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>135 Cypress St, Springfield</Address>
         <JobPosition>Graphic Designer</JobPosition>
         <Age>31</Age>
@@ -92,7 +92,7 @@
     <Person>
         <FirstName>Olivia</FirstName>
         <LastName>Walker</LastName>
-        <Gender>2</Gender>
+        <Gender>Female</Gender>
         <Address>246 Fir St, Springfield</Address>
         <JobPosition>Product Manager</JobPosition>
         <Age>37</Age>
@@ -100,7 +100,7 @@
     <Person>
         <FirstName>Benjamin</FirstName>
         <LastName>Young</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>369 Ash St, Springfield</Address>
         <JobPosition>Software Architect</JobPosition>
         <Age>48</Age>
@@ -108,7 +108,7 @@
     <Person>
         <FirstName>Emma</FirstName>
         <LastName>King</LastName>
-        <Gender>2</Gender>
+        <Gender>Female</Gender>
         <Address>258 Spruce St, Springfield</Address>
         <JobPosition>Quality Assurance</JobPosition>
         <Age>26</Age>
@@ -116,7 +116,7 @@
     <Person>
         <FirstName>Noah</FirstName>
         <LastName>Scott</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>147 Elm St, Springfield</Address>
         <JobPosition>Network Engineer</JobPosition>
         <Age>34</Age>
@@ -124,7 +124,7 @@
     <Person>
         <FirstName>Ava</FirstName>
         <LastName>Lopez</LastName>
-        <Gender>2</Gender>
+        <Gender>Female</Gender>
         <Address>369 Hickory St, Springfield</Address>
         <JobPosition>Sales Executive</JobPosition>
         <Age>39</Age>
@@ -132,7 +132,7 @@
     <Person>
         <FirstName>Liam</FirstName>
         <LastName>Perez</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>963 Sycamore St, Springfield</Address>
         <JobPosition>DevOps Engineer</JobPosition>
         <Age>29</Age>
@@ -140,7 +140,7 @@
     <Person>
         <FirstName>Sophia</FirstName>
         <LastName>Turner</LastName>
-        <Gender>2</Gender>
+        <Gender>Female</Gender>
         <Address>741 Willow St, Springfield</Address>
         <JobPosition>Legal Advisor</JobPosition>
         <Age>41</Age>
@@ -148,7 +148,7 @@
     <Person>
         <FirstName>Lucas</FirstName>
         <LastName>Gonzalez</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>852 Aspen St, Springfield</Address>
         <JobPosition>Technical Support</JobPosition>
         <Age>33</Age>
@@ -156,7 +156,7 @@
     <Person>
         <FirstName>Isabella</FirstName>
         <LastName>Martinez</LastName>
-        <Gender>2</Gender>
+        <Gender>Female</Gender>
         <Address>951 Pine St, Springfield</Address>
         <JobPosition>Event Coordinator</JobPosition>
         <Age>30</Age>
@@ -164,7 +164,7 @@
     <Person>
         <FirstName>Matthew</FirstName>
         <LastName>Anderson</LastName>
-        <Gender>1</Gender>
+        <Gender>Male</Gender>
         <Address>753 Palm St, Springfield</Address>
         <JobPosition>Research Scientist</JobPosition>
         <Age>45</Age>

@@ -21,10 +21,7 @@ public class Configuration : IConfiguration
             .Build();
 
         var mainSection = config.GetSection("AppSettings");
-        
-        if (mainSection == null)
-            Console.WriteLine("Section do not exist!!");
 
-        return mainSection!.Get<AppSettings>()!;
+        return mainSection.Get<AppSettings>()!;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using DataProcess;
 using Launcher.Interfaces;
 using Mapper;
+using Newtonsoft.Json;
 using RollingFileWriter;
 
 namespace Launcher.Services;
@@ -27,12 +28,20 @@ public class CommonLogicService : ICommonLogicService
     public void Perform()
     {
         var person = _dataProcessingService.GetRandomPerson();
+
+        string content;
         
-        if (_configuration.Get()!.IsMappingEnabled)
+        if (_configuration.Get().IsMappingEnabled)
         {
-            var data = _mappingService.FilterData(person);
+            var filteredData = _mappingService.FilterData(person);
+            content = JsonConvert.SerializeObject(filteredData);
         }
+        else
+        {
+            content = JsonConvert.SerializeObject(person);
+        }
+        
+        _rollingFileWriterService.WriteData(content);
+        Console.WriteLine($"Data for {person.LastName} were written down.");
     }
-    
-    
 }

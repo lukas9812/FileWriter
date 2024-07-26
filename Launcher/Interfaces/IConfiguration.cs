@@ -4,5 +4,5 @@ namespace Launcher.Interfaces;
 
 public interface IConfiguration
 {
-    AppSettings? Get();
+    AppSettings Get();
 }
