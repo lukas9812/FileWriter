@@ -15,6 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\DataProcess\DataProcess.csproj" />
       <ProjectReference Include="..\Mapper\Mapper.csproj" />
       <ProjectReference Include="..\RollingFileWriter\RollingFileWriter.csproj" />
     </ItemGroup>

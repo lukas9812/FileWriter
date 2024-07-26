@@ -9,3 +9,4 @@ C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.dll
 C:\MyProjects\Mapper\obj\Debug\net8.0\refint\Mapper.dll
 C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.pdb
 C:\MyProjects\Mapper\obj\Debug\net8.0\ref\Mapper.dll
+C:\MyProjects\Mapper\obj\Debug\net8.0\Mapper.sourcelink.json

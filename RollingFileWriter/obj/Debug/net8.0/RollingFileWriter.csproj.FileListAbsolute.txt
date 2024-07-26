@@ -9,3 +9,4 @@ C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.dll
 C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\refint\RollingFileWriter.dll
 C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.pdb
 C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\ref\RollingFileWriter.dll
+C:\MyProjects\RollingFileWriter\obj\Debug\net8.0\RollingFileWriter.sourcelink.json

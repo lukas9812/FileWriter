@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "Launcher\Launch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapper", "Mapper\Mapper.csproj", "{19093A97-616C-4D56-BE3C-1A434D592544}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcess", "DataProcess\DataProcess.csproj", "{5437B39A-6456-4834-A317-162A6197CEC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{19093A97-616C-4D56-BE3C-1A434D592544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19093A97-616C-4D56-BE3C-1A434D592544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19093A97-616C-4D56-BE3C-1A434D592544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5437B39A-6456-4834-A317-162A6197CEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5437B39A-6456-4834-A317-162A6197CEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5437B39A-6456-4834-A317-162A6197CEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5437B39A-6456-4834-A317-162A6197CEC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

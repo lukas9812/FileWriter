@@ -387,6 +387,16 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "DataProcess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DataProcess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataProcess.dll": {}
+        }
+      },
       "Mapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1104,6 +1114,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "DataProcess/1.0.0": {
+      "type": "project",
+      "path": "../DataProcess/DataProcess.csproj",
+      "msbuildProject": "../DataProcess/DataProcess.csproj"
+    },
     "Mapper/1.0.0": {
       "type": "project",
       "path": "../Mapper/Mapper.csproj",
@@ -1117,6 +1132,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DataProcess >= 1.0.0",
       "Mapper >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 8.0.0",
       "Microsoft.Extensions.Configuration.Json >= 8.0.0",
@@ -1154,6 +1170,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\MyProjects\\DataProcess\\DataProcess.csproj": {
+              "projectPath": "C:\\MyProjects\\DataProcess\\DataProcess.csproj"
+            },
             "C:\\MyProjects\\Mapper\\Mapper.csproj": {
               "projectPath": "C:\\MyProjects\\Mapper\\Mapper.csproj"
             },

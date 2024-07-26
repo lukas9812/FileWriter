@@ -1,7 +1,8 @@
 ﻿using Launcher.Model;
 using Microsoft.Extensions.Configuration;
+using IConfiguration = Launcher.Interfaces.IConfiguration;
 
-namespace Launcher;
+namespace Launcher.Services;
 
 public class Configuration : IConfiguration
 {
@@ -9,10 +10,10 @@ public class Configuration : IConfiguration
 
     public Configuration()
     {
-        _config = GetAppSettings();
+        _config = Get();
     }
 
-    public AppSettings GetAppSettings()
+    public AppSettings Get()
     {
         var config = new ConfigurationBuilder()
             .SetBasePath(AppContext.BaseDirectory)

@@ -10,13 +10,13 @@ public class MappingService : IMappingService
     /// <summary>
     ///Method allows filtering exact FieldNames written down in .xml file and map it to (PropertyName, PropertyValue) type.
     /// </summary>
-    /// <param name="xbciData">Collection data received from XONTRO</param>
+    /// <param name="data">Collection data received from XONTRO</param>
     /// <returns></returns>
-    public Dictionary<string, object?> FilterData(object xbciData)
+    public Dictionary<string, object?> FilterData(object data)
     {
         var filteredProperties = new Dictionary<string, object?>();
 
-        var properties = xbciData.GetType().GetProperties();
+        var properties = data.GetType().GetProperties();
         var fields = GetFields().ToList();
 
         foreach (var propertyInfo in properties)
@@ -24,7 +24,7 @@ public class MappingService : IMappingService
             if (!fields.Contains(propertyInfo.Name))
                 continue;
 
-            var propertyValue = propertyInfo.GetValue(xbciData);
+            var propertyValue = propertyInfo.GetValue(data);
             filteredProperties.Add(propertyInfo.Name, propertyValue);
         }
 

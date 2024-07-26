@@ -37,3 +37,7 @@ C:\MyProjects\Launcher\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.
 C:\MyProjects\Launcher\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\MyProjects\Launcher\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\MyProjects\Launcher\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\MyProjects\Launcher\bin\Debug\net8.0\PersonData.xml
+C:\MyProjects\Launcher\bin\Debug\net8.0\DataProcess.dll
+C:\MyProjects\Launcher\bin\Debug\net8.0\DataProcess.pdb
+C:\MyProjects\Launcher\obj\Debug\net8.0\Launcher.sourcelink.json

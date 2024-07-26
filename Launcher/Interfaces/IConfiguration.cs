@@ -1,8 +1,8 @@
 ﻿using Launcher.Model;
 
-namespace Launcher;
+namespace Launcher.Interfaces;
 
 public interface IConfiguration
 {
-    AppSettings? GetAppSettings();
+    AppSettings? Get();
 }

@@ -2,5 +2,5 @@
 
 public interface IMappingService
 {
-    Dictionary<string, object?> FilterData(object xbciData);
+    Dictionary<string, object?> FilterData(object data);
 }

@@ -1,17 +1,18 @@
-﻿using Launcher;
-using Launcher.Model;
+﻿using DataProcess;
+using Launcher.Interfaces;
+using Launcher.Services;
 using Mapper;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using RollingFileWriter;
-using IConfiguration = Launcher.IConfiguration;
+using IConfiguration = Launcher.Interfaces.IConfiguration;
 
 var serviceProvider = new ServiceCollection()
     .AddLogging()
     .AddSingleton<IRollingFileWriterService, RollingFileWriterService>()
     .AddSingleton<IMappingService, MappingService>()
-    .AddSingleton<ICommonLogic, CommonLogic>()
+    .AddSingleton<ICommonLogicService, CommonLogicService>()
+    .AddSingleton<IDataProcessingService, DataProcessingService>()
     .AddScoped<IConfiguration, Configuration>()
     .BuildServiceProvider();
     
@@ -24,5 +25,11 @@ var logger = serviceProvider.GetService<ILoggerFactory>()!
     
 logger.LogDebug("Starting application");
 
-var service = serviceProvider.GetService<ICommonLogic>();
-service.Perform();
+var commonLogic = serviceProvider.GetService<ICommonLogicService>();
+if (commonLogic is null)
+{
+    logger.LogError("Common logic service is null!");
+    return;
+}
+    
+commonLogic.Perform();

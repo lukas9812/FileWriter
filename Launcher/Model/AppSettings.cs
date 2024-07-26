@@ -2,5 +2,7 @@
 
 public class AppSettings
 {
-    public bool IsMappingEnabled { get; set; }
+    public bool IsMappingEnabled { get; init; }
+
+    public int MaximumFileSizeInMb { get; set; }
 }
