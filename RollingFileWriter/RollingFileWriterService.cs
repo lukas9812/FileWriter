@@ -10,13 +10,13 @@ public class RollingFileWriterService : IRollingFileWriterService
 
     public RollingFileWriterService()
     {
+        _maximalFileSizeInMb = 500;
         Directory.CreateDirectory(_directoryPath); // Ensure the directory exists
         SetupFileName(string.Empty);
     }
 
     public RollingFileWriterService(string directoryPath, string fileName, int maximalFileSizeInMb = 500)
     {
-        //Init directory with own directory path
         _maximalFileSizeInMb = maximalFileSizeInMb;
         _directoryPath = directoryPath;
         Directory.CreateDirectory(_directoryPath); // Ensure the directory exists
