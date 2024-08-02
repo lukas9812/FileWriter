@@ -4,6 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Version>1.1.0</Version>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>RollingFileWriter</RootNamespace>
         <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
@@ -13,6 +14,8 @@
 
     <PropertyGroup>
         <PackageId>RollingFileWriter</PackageId>
+        <PackageDescription>NuGet for writing to the file with predefined limited size</PackageDescription>
+        <RepositoryUrl>https://github.com/lukas9812/FileWriter</RepositoryUrl>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <DebugType>embedded</DebugType>
     </PropertyGroup>

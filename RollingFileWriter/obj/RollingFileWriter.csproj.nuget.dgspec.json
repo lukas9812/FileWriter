@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\MyProjects\\RollingFileWriter\\RollingFileWriter.csproj": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "restore": {
         "projectUniqueName": "C:\\MyProjects\\RollingFileWriter\\RollingFileWriter.csproj",
         "projectName": "RollingFileWriter",
@@ -14,6 +14,7 @@
         "outputPath": "C:\\MyProjects\\RollingFileWriter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "C:\\MyProjects\\NuGet.Config",
           "C:\\Users\\srovnal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -21,10 +22,7 @@
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://gitlab.bsdevops.io/api/v4/projects/585/packages/nuget/index.json": {},
-          "https://gitlab.bsdevops.io/api/v4/projects/586/packages/nuget/index.json": {}
+          "https://nuget.pkg.github.com/lukas9812/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -36,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
