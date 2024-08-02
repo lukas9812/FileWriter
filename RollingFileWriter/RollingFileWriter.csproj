@@ -4,6 +4,17 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>RollingFileWriter</RootNamespace>
+        <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+        <Authors>Lukas Srovnal</Authors>
+        <Copyright>Copyright © Lukas Srovnal</Copyright>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>RollingFileWriter</PackageId>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <DebugType>embedded</DebugType>
     </PropertyGroup>
 
 </Project>

@@ -41,7 +41,9 @@ public class CommonLogicService : ICommonLogicService
             content = JsonConvert.SerializeObject(person);
         }
         
-        _rollingFileWriterService.WriteData(content);
+        //_rollingFileWriterService.WriteData(content);
+        var tmp = new RollingFileWriterService("customDir", "customFilePath", 20);
+        tmp.WriteData(content);
         Console.WriteLine($"Data for {person.LastName} were written down.");
     }
 }

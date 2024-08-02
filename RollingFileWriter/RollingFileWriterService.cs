@@ -2,30 +2,44 @@
 
 public class RollingFileWriterService : IRollingFileWriterService
 {
+    private static string _directoryPath = "StoredData";
     private string _currentFilePath;
-    private  const string DirectoryPath = "BroadcastData";
-    private readonly string _fileNamePrefix = $"Data_{DateTime.Today:dd_MM_yyyy}";
+    private readonly string _hardcodedFileName = $"Data_{DateTime.Today:dd_MM_yyyy}";
     private int _fileIndex;
+    private readonly int _maximalFileSizeInMb;
 
     public RollingFileWriterService()
     {
-        Directory.CreateDirectory(DirectoryPath); // Ensure the directory exists
-        CreateNewFile();
+        Directory.CreateDirectory(_directoryPath); // Ensure the directory exists
+        SetupFileName(string.Empty);
+    }
+
+    public RollingFileWriterService(string directoryPath, string fileName, int maximalFileSizeInMb = 500)
+    {
+        //Init directory with own directory path
+        _maximalFileSizeInMb = maximalFileSizeInMb;
+        _directoryPath = directoryPath;
+        Directory.CreateDirectory(_directoryPath); // Ensure the directory exists
+        SetupFileName(fileName);
+    }
+    
+    private void SetupFileName(string customFileName)
+    {
+        _currentFilePath = Path.Combine(_directoryPath,
+            customFileName == string.Empty
+                ? $"{_hardcodedFileName}_{_fileIndex}.json"
+                : $"{customFileName}_{_fileIndex}.json");
+
+        _fileIndex++;
     }
     
     public void WriteData(string data) 
     {
         if (IsFileSizeExceeded())
-            CreateNewFile();
+            SetupFileName(_currentFilePath);
 
         using var writer = new StreamWriter(_currentFilePath, append: true);
         writer.WriteLine(data);
-    }
-
-    private void CreateNewFile()
-    {
-        _currentFilePath = Path.Combine(DirectoryPath, $"{_fileNamePrefix}_{_fileIndex}.json");
-        _fileIndex++;
     }
 
     private bool IsFileSizeExceeded()
@@ -35,8 +49,7 @@ public class RollingFileWriterService : IRollingFileWriterService
 
         var fileInfo = new FileInfo(_currentFilePath);
         
-        //ToDo: Add to configuration (app.config)
-        return fileInfo.Length >= ConvertMbToBytes(500);
+        return fileInfo.Length >= ConvertMbToBytes(_maximalFileSizeInMb);
     }
     
     /// <summary>
