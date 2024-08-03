@@ -3,7 +3,7 @@ using Moq;
 
 namespace RollingFileWriter.Tests;
 
-public class UnitTest1
+public class FileWriterTests
 {
     [Fact]
     public void Test_File_WasCreated_Successfully()
