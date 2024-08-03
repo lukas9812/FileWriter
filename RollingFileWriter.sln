@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingFileWriter.Tests", "RollingFileWriter.Tests\RollingFileWriter.Tests.csproj", "{EFE70FF8-7A02-4739-8939-3E8B97CC6383}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,5 +37,9 @@ Global
 		{5437B39A-6456-4834-A317-162A6197CEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5437B39A-6456-4834-A317-162A6197CEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5437B39A-6456-4834-A317-162A6197CEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE70FF8-7A02-4739-8939-3E8B97CC6383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE70FF8-7A02-4739-8939-3E8B97CC6383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE70FF8-7A02-4739-8939-3E8B97CC6383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE70FF8-7A02-4739-8939-3E8B97CC6383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

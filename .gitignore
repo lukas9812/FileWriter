@@ -408,3 +408,5 @@ Thumbs.db
 # e.g. IOCTalk-DataStreamLogs, log4net logfiles
 *.dlog
 *.log*
+rider.project.*
+project.nuget.cache

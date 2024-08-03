@@ -6,18 +6,22 @@ public class RollingFileWriterService : IRollingFileWriterService
     private string _currentFilePath;
     private readonly string _hardcodedFileName = $"Data_{DateTime.Today:dd_MM_yyyy}";
     private int _fileIndex;
-    private readonly int _maximalFileSizeInMb;
+    private readonly double _maximalFileSizeInMb;
+    private readonly string _customCurrentFilePath;
 
     public RollingFileWriterService()
     {
+        _customCurrentFilePath = _hardcodedFileName;
         _maximalFileSizeInMb = 500;
-        Directory.CreateDirectory(_directoryPath); // Ensure the directory exists
+        Directory.CreateDirectory(_directoryPath);
         SetupFileName(string.Empty);
     }
 
-    public RollingFileWriterService(string directoryPath, string fileName, int maximalFileSizeInMb = 500)
+    public RollingFileWriterService(string directoryPath, string fileName, double maximalFileSizeInMb = 500)
     {
         _maximalFileSizeInMb = maximalFileSizeInMb;
+        _currentFilePath = fileName;
+        _customCurrentFilePath = fileName;
         _directoryPath = directoryPath;
         Directory.CreateDirectory(_directoryPath); // Ensure the directory exists
         SetupFileName(fileName);
@@ -36,7 +40,7 @@ public class RollingFileWriterService : IRollingFileWriterService
     public void WriteData(string data) 
     {
         if (IsFileSizeExceeded())
-            SetupFileName(_currentFilePath);
+            SetupFileName(_customCurrentFilePath);
 
         using var writer = new StreamWriter(_currentFilePath, append: true);
         writer.WriteLine(data);
