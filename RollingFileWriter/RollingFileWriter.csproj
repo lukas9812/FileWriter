@@ -16,13 +16,16 @@
     <PropertyGroup>
         <PackageId>RollingFileWriter</PackageId>
         <PackageDescription>NuGet for writing to the file with predefined limited size</PackageDescription>
-        <PackageProjectUrl>https://github.com/lukas9812/FileWriter/pkgs/nuget/RollingFileWriter</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/lukas9812/FileWriter</PackageProjectUrl>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <DebugType>embedded</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Resources\" />
+        <None Update="icon.png">
+            <Pack>true</Pack>
+            <PackagePath>icon.png</PackagePath>
+        </None>
     </ItemGroup>
 
 </Project>
