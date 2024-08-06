@@ -1,5 +1,7 @@
 # NuGet usage:
 
+NuGet: https://www.nuget.org/packages/RollingFileWriter
+
 1. Reference NuGet package via using in your class:
  ```cs
 using RollingFileWriter;
