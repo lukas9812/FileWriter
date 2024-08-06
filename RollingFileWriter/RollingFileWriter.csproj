@@ -4,20 +4,25 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>1.2.0</Version>
+        <Version>1.2.1</Version>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>RollingFileWriter</RootNamespace>
         <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-        <Authors>Lukas Srovnal</Authors>
-        <Copyright>Copyright © Lukas Srovnal</Copyright>
+        <Authors>lukas9812</Authors>
+        <Copyright>Copyright © LSR</Copyright>
+        <PackageIcon>icon.png</PackageIcon>
     </PropertyGroup>
 
     <PropertyGroup>
         <PackageId>RollingFileWriter</PackageId>
         <PackageDescription>NuGet for writing to the file with predefined limited size</PackageDescription>
-        <RepositoryUrl>https://github.com/lukas9812/FileWriter</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/lukas9812/FileWriter/pkgs/nuget/RollingFileWriter</PackageProjectUrl>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <DebugType>embedded</DebugType>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources\" />
+    </ItemGroup>
 
 </Project>

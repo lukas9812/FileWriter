@@ -45,6 +45,15 @@ public class RollingFileWriterService : IRollingFileWriterService
         using var writer = new StreamWriter(_currentFilePath, append: true);
         writer.WriteLine(data);
     }
+    
+    public void WriteData(object dataAsObject) 
+    {
+        if (IsFileSizeExceeded())
+            SetupFileName(_customCurrentFilePath);
+
+        using var writer = new StreamWriter(_currentFilePath, append: true);
+        writer.WriteLine(dataAsObject);
+    }
 
     private bool IsFileSizeExceeded()
     {
