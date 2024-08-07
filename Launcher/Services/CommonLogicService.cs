@@ -45,5 +45,17 @@ public class CommonLogicService : ICommonLogicService
         var tmp = new RollingFileWriterService("customDir", "customFilePath", 20);
         tmp.WriteData(content);
         Console.WriteLine($"Data for {person.LastName} were written down.");
+        
+        var dataAsObject = new List<string> { "test1", "test2", "test3", "test4" };
+        var dict = new Dictionary<string, int>
+        {
+            {"key1", 1},
+            {"key2", 2},
+            {"key3", 3},
+            {"key4", 4}
+        };
+        
+        _rollingFileWriterService.WriteData(dataAsObject);
+        //_rollingFileWriterService.WriteData(dict);
     }
 }

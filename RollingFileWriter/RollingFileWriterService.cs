@@ -1,4 +1,6 @@
-﻿namespace RollingFileWriter;
+﻿using Newtonsoft.Json;
+
+namespace RollingFileWriter;
 
 public class RollingFileWriterService : IRollingFileWriterService
 {
@@ -50,9 +52,11 @@ public class RollingFileWriterService : IRollingFileWriterService
     {
         if (IsFileSizeExceeded())
             SetupFileName(_customCurrentFilePath);
+            
+        var genericSerializedData = JsonConvert.SerializeObject(dataAsObject, Formatting.Indented);
 
         using var writer = new StreamWriter(_currentFilePath, append: true);
-        writer.WriteLine(dataAsObject);
+        writer.WriteLine(genericSerializedData);
     }
 
     private bool IsFileSizeExceeded()
