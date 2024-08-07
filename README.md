@@ -27,10 +27,15 @@ public RollingFileWriterService(string directoryPath, string fileName, int maxim
         SetupFileName(fileName);
     }
  ```
-3. From created instance call method with string incoming parameter:
+3. From created instance call method with incoming parameter as string or object:
 
 ```cs
 WriteData(string data)
+```
+OR
+
+```cs
+WriteData(object dataAsObject)
 ```
 
 4. All written data you can find in **/bin** folder under mentioned folder name.
