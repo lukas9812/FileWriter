@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Xml.Serialization;
+using Newtonsoft.Json;
 
 namespace RollingFileWriter;
 
@@ -9,6 +10,7 @@ public class RollingFileWriterService : IRollingFileWriterService
     private readonly string _hardcodedFileName = $"Data_{DateTime.Today:dd_MM_yyyy}";
     private int _fileIndex;
     private readonly double _maximalFileSizeInMb;
+    private readonly bool _xml;
     private readonly string _customCurrentFilePath;
 
     public RollingFileWriterService()
@@ -19,9 +21,10 @@ public class RollingFileWriterService : IRollingFileWriterService
         SetupFileName(string.Empty);
     }
 
-    public RollingFileWriterService(string directoryPath, string fileName, double maximalFileSizeInMb = 500)
+    public RollingFileWriterService(string directoryPath, string fileName, double maximalFileSizeInMb = 500, bool xml = true)
     {
         _maximalFileSizeInMb = maximalFileSizeInMb;
+        _xml = xml;
         _currentFilePath = fileName;
         _customCurrentFilePath = fileName;
         _directoryPath = directoryPath;
@@ -48,12 +51,35 @@ public class RollingFileWriterService : IRollingFileWriterService
         writer.WriteLine(data);
     }
     
-    public void WriteData(object dataAsObject) 
+    public void WriteData(object dataAsObject, bool xml) 
     {
         if (IsFileSizeExceeded())
             SetupFileName(_customCurrentFilePath);
-            
-        var genericSerializedData = JsonConvert.SerializeObject(dataAsObject, Formatting.Indented);
+
+        bool xmlOutput;
+        if (_xml || xml)
+        {
+            xmlOutput = true;
+        }
+        else
+        {
+            xmlOutput = false;
+        }
+
+        string genericSerializedData = string.Empty;
+        if (xmlOutput = true)
+        {
+            XmlSerializer serializer = new XmlSerializer(dataAsObject.GetType());
+            using (StringWriter xmlWriter = new StringWriter())
+            {
+                serializer.Serialize(xmlWriter, dataAsObject);
+                genericSerializedData = xmlWriter.ToString();
+            }
+        }
+        else
+        {
+            genericSerializedData = JsonConvert.SerializeObject(dataAsObject, Formatting.Indented);    
+        }
 
         using var writer = new StreamWriter(_currentFilePath, append: true);
         writer.WriteLine(genericSerializedData);
