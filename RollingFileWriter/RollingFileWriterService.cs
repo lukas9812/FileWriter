@@ -58,23 +58,19 @@ public class RollingFileWriterService : IRollingFileWriterService
 
         bool xmlOutput;
         if (_xml || xml)
-        {
             xmlOutput = true;
-        }
+        
         else
-        {
             xmlOutput = false;
-        }
-
-        string genericSerializedData = string.Empty;
-        if (xmlOutput = true)
+        
+        var genericSerializedData = string.Empty;
+        
+        if (xmlOutput)
         {
             XmlSerializer serializer = new XmlSerializer(dataAsObject.GetType());
-            using (StringWriter xmlWriter = new StringWriter())
-            {
-                serializer.Serialize(xmlWriter, dataAsObject);
-                genericSerializedData = xmlWriter.ToString();
-            }
+            using StringWriter xmlWriter = new StringWriter();
+            serializer.Serialize(xmlWriter, dataAsObject);
+            genericSerializedData = xmlWriter.ToString();
         }
         else
         {

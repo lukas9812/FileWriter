@@ -55,7 +55,7 @@ public class CommonLogicService : ICommonLogicService
             {"key4", 4}
         };
         
-        _rollingFileWriterService.WriteData(dataAsObject);
+        _rollingFileWriterService.WriteData(dataAsObject, true);
         //_rollingFileWriterService.WriteData(dict);
     }
 }

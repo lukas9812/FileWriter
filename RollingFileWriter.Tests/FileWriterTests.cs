@@ -67,7 +67,7 @@ public class FileWriterTests
         const string fileName = "TestFile";
         const double exceedFileSize = 0.000049;
         
-        var writerMock = new Mock<RollingFileWriterService>(directory, fileName, exceedFileSize).Object;
+        var writerMock = new Mock<RollingFileWriterService>(directory, fileName, exceedFileSize, false).Object;
         // var writerMock = new Mock<RollingFileWriterService>().Object;
         
         var testString1 = "This is test string which exceed defined size declared in mocked ctor.";
